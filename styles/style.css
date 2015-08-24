@@ -1,0 +1,23 @@
+.sound-section {
+	width: 600px;
+}
+
+#cp {
+	position: relative;
+	float: left;
+}
+
+#pad1, #pad2, #pad3, #pad4 {
+	display: inline-block;
+	background-color: #00a8a8;
+	width: 180px;
+	margin: 10px;
+	height: 180px;
+	border-radius: 5px;
+}
+
+.vControl {
+	position: relative;
+	float: left;
+	margin: 10px;
+}

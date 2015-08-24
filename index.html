@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+	<body>
+		<section id="sp" class="sound-section">
+			<div id="pad1" data-sound="kick.wav"></div>
+		    <div id="pad2" data-sound="snare.wav"></div>
+		    <div id="pad3" data-sound="tin.wav"></div>
+		    <div id="pad4" data-sound="hat.wav"></div>
+		</section>
+
+		<section id="cp">
+			<div class="vControl" data-pad="pad1">
+				<h2>TL Control</h2>
+				<h3>Top Left Pad</h3>
+				<button type="button" class="loop-button" data-toggle-text="End Loop" value=false>Loop</button>
+				<button type="button" class="reverb-button" data-toggle-text="No Rvrb" value=false>Reverb</button>
+				<label for"volume 1">Volume</label>
+				<input type="range" min="-1" max="5" step="0.1" value="1" data-control="gain" name="volume1"/>
+			</div>
+
+			<div class="vControl" data-pad="pad2">
+				<h2>TR Control</h2>
+				<h3>Top Right Pad</h3>
+				<button type="button" class="loop-button" data-toggle-text="End Loop" value=false>Loop</button>
+				<button type="button" class="reverb-button" data-toggle-text="No Rvrb" value=false>Reverb</button>
+				<label for"volume 2">Volume</label>
+				<input type="range" min="-1" max="5" step="0.1" value="1" data-control="gain" name="volume2"/>
+			</div>
+
+			<div class="vControl" data-pad="pad3">
+				<h2>BL Control</h2>
+				<h3>Bottom Left Pad</h3>
+				<button type="button" class="loop-button" data-toggle-text="End Loop" value=false>Loop</button>
+				<button type="button" class="reverb-button" data-toggle-text="No Rvrb" value=false>Reverb</button>
+				<label for"volume 3">Volume</label>
+				<input type="range" min="-1" max="5" step="0.1" value="1" data-control="gain" name="volume3"/>
+			</div>
+
+			<div class="vControl" data-pad="pad4">
+				<h2>BR Control</h2>
+				<h3>Bottom Right Pad</h3>
+				<button type="button" class="loop-button" data-toggle-text="End Loop" value=false>Loop</button>
+				<button type="button" class="reverb-button" data-toggle-text="No Rvrb" value=false>Reverb</button>
+				<label for"volume 4">Volume</label>
+				<input type="range" min="-1" max="5" step="0.1" value="1" data-control="gain" name="volume4"/>
+			</div>
+		</section>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
